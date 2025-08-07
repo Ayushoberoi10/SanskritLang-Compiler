@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SanskritLang Compiler</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body id="page-body" class="dark-mode">
+  <header>
+    <h1>💻 SanskritLang Compiler</h1>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <main>
+    <div class="left-panel">
+      <textarea id="code-input" spellcheck="false" placeholder="// likho yahan Sanskrit ya Hinglish mein code..."></textarea>
+      <div class="buttons">
+        <button onclick="runCode()">▶️ Run</button>
+        <button onclick="resetCode()">🔁 Reset</button>
+      </div>
+      <div class="suggestions">
+        <p>💡 Code Suggestions:</p>
+        <ul>
+          <li onclick="insertSnippet('karya mukhya():\\n    lekh(\\"Namaste\\")')">Print Namaste</li>
+          <li onclick="insertSnippet('yadi(saty):\\n    lekh(\\"Ha! Yeh satya hai\\")\\nanyatha:\\n    lekh(\\"Asatya hai\\")')">If-Else</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="output-section">
+        <h3>📜 Output Console</h3>
+        <pre id="output">➡️ Output will appear here...</pre>
+      </div>
+
+      <div class="docs-section">
+        <h3>📚 Documentation</h3>
+        <ul>
+          <li><b>karya</b> → def</li>
+          <li><b>mukhya</b> → main</li>
+          <li><b>lekh</b> → print</li>
+          <li><b>yadi</b> → if</li>
+          <li><b>anyatha</b> → else</li>
+          <li><b>saty</b> → True</li>
+          <li><b>asaty</b> → False</li>
+          <li><b>paravartay</b> → return</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
