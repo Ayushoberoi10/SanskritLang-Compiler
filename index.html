@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>SanskritLang Compiler</title>
-  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body id="page-body" class="dark-mode">
   <header>
@@ -21,8 +21,8 @@
       <div class="suggestions">
         <p>💡 Code Suggestions:</p>
         <ul>
-          <li onclick="insertSnippet('karya mukhya():\\n    lekh(\\"Namaste\\")')">Print Namaste</li>
-          <li onclick="insertSnippet('yadi(saty):\\n    lekh(\\"Ha! Yeh satya hai\\")\\nanyatha:\\n    lekh(\\"Asatya hai\\")')">If-Else</li>
+          <li onclick="insertSnippet(`karya mukhya():\n    lekh("Namaste")\nmukhya()`);">Print Namaste</li>
+          <li onclick="insertSnippet(`yadi saty:\n    lekh("Ha! Yeh satya hai")\nanyatha:\n    lekh("Asatya hai")`);">If-Else</li>
         </ul>
       </div>
     </div>
@@ -49,6 +49,6 @@
     </div>
   </main>
 
-  <script src="/static/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
